@@ -1,0 +1,190 @@
+:root{
+    --primary: #d4d4d4;
+    --bg-color: rgb(5, 53, 61);
+    --bg-envelope-color: #ff4949;
+    --envelope-tab: #ff303a;
+    --envelope-cover: #ff3d3d;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+    --txt-color: #444;
+    --heart-color: rgb(252, 8, 231);
+  }
+
+body {text-align: center; margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #ffffff;
+    
+        display: flex; /* Use flexbox layout */
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center-align items horizontally */
+        justify-content: center; /* Center-align items vertically */ /* Make the container full viewport height */
+    
+    }
+    
+    #imageContain {
+        display: flexbox; /* Use flexbox layout */
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center-align items horizontally */
+        justify-content: center; /* Center-align items vertically */
+    }
+
+#heart {
+    padding: 4px 10px; /* Set padding for buttons */
+    margin: 0 10px; /* Set margin around buttons */
+    font-size: 10px; /* Set font size for buttons */
+    font-family: 'Sacramento', cursive; /* Apply Sacramento font to the options */
+    background-color: #FB607F; /* Set button background color */
+    color: white; /* Set text color to white */
+    border: none; /* Remove button border */
+    cursor: pointer; /* Set cursor to pointer on hover */
+    left:55%;
+}
+
+#Yes {
+    padding: 10px 20px; /* Set padding for buttons */
+    margin: 0 10px; /* Set margin around buttons */
+    font-size: 26px; /* Set font size for buttons */
+    font-family: 'Sacramento', cursive; /* Apply Sacramento font to the options */
+    background-color: #FB607F; /* Set button background color */
+    color: white; /* Set text color to white */
+    border: none; /* Remove button border */
+    cursor: pointer; /* Set cursor to pointer on hover */
+    left:55%;
+}
+#No {
+    padding: 10px 20px; /* Set padding for buttons */
+    margin: 0 10px; /* Set margin around buttons */
+    font-size: 26px; /* Set font size for buttons */
+    font-family: 'Sacramento', cursive; /* Apply Sacramento font to the options */
+    background-color: #FB607F; /* Set button background color */
+    color: white; /* Set text color to white */
+    border: none; /* Remove button border */
+    cursor: pointer; /* Set cursor to pointer on hover */
+    left:55%;
+}
+
+
+.container {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+#envelop {
+    background: var(--bg-envelope-color);
+    position: relative;
+    width: 300px;
+    height: 230px;
+    top: 30vh;
+  }
+
+#wrapper{
+    position: absolute;
+    width: auto;
+    height: auto;
+    border-top: 130px solid var(--envelope-tab);
+    border-right: 120px solid transparent;
+    border-left: 120px solid transparent;
+}
+
+#wrapper.fuck{
+    position: absolute;
+    width: auto;
+    height: auto;
+    border-top: 80px solid var(--envelope-tab);
+    border-right: 120px solid transparent;
+    border-left: 120px solid transparent;
+    animation: mymove 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+
+}
+
+#envelop.fuck{
+    transition: all 0.5s ease-in-out 0.7s;
+    top:20vh;
+    height: 130px;
+    transform: rotate(180deg); top:0px;
+
+}
+@keyframes mymove {
+    100% {transition: all 0.5s ease-in-out 0.7s;
+        transform: rotateX(180deg); bottom: 130px;}
+  }
+
+  #lettercontainer {
+    opacity: 0;
+
+}
+#lettercontainer.kaboom{
+    transition: all 0.3s ease-in 0.3s;
+    opacity: 100;
+    padding: 20px;
+    background-color: #ff626a;
+    height: auto;
+    display: flexbox;
+    place-items: center;
+    position: absolute;
+    top: 40vh;
+    border: 7px solid #ff3d3d;
+    
+}
+#letter1{
+    padding: 3px 3px; /* Set padding for buttons */
+    margin: 0 10px; /* Set margin around buttons */
+    font-size: 20px; /* Set font size for buttons */
+    font-family: 'Segoe Print', cursive; /* Apply Sacramento font to the options */
+    background-color: #FB607F; /* Set button background color */
+    color: white; /* Set text color to white */
+    border: none; /* Remove button border */ /* Set cursor to pointer on hover */
+    left:55%;
+}
+
+#letter2{
+    padding: 3px 3px; /* Set padding for buttons */
+    margin: 0 10px; /* Set margin around buttons */
+    font-size: 20px; /* Set font size for buttons */
+    font-family: 'Segoe Print', cursive; /* Apply Sacramento font to the options */
+    background-color: #FB607F; /* Set button background color */
+    color: white; /* Set text color to white */
+    border: none; /* Remove button border */ /* Set cursor to pointer on hover */
+    left:55%;
+    border-bottom: 190px solid #FB607F;
+}
+#letter3{
+    padding: 3px 3px; /* Set padding for buttons */
+    margin: 0 10px; /* Set margin around buttons */
+    font-size: 15px; /* Set font size for buttons */
+    font-family: 'Segoe Print', cursive; /* Apply Sacramento font to the options */
+    background-color: #FB607F; /* Set button background color */
+    color: white; /* Set text color to white */
+    border: none; /* Remove button border */ /* Set cursor to pointer on hover */
+    left:55%;
+}
+#letter2.fuck{
+    opacity: 0;
+    display: none;
+    width: 0;
+    height: 0;
+}
+/*
+    position: absolute;
+    animation-delay: 2s;
+    bottom: 130px;
+    transform: rotateX(180deg);
+260px;
+height: 50px;
+
+#wrapper{
+
+    content: "";
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 55px;
+    border-top: 60px solid var(--envelope-tab);
+    border-right: 132px solid transparent;
+    border-left: 132px solid transparent;
+    transform-origin: top;
+}
+
+*/
